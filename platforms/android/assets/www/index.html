@@ -1,34 +1,261 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" /> <meta name="format-detection" content="telephone=no" /> <meta name="msapplication-tap-highlight" content="no" /> <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <title> FlamboyantOm </title>
-    </head>
-    <script>
-        document.addEventListener("deviceready", onDeviceReady, true);
-        function onDeviceReady() {
-            console.log(navigator.contacts);
+<script> 
+    
+
+//alert(omFunc());
+try{
+   var checkme =  omFunc();
+    alert(checkme);
+    
+    if(checkme = 'true'){   throw 'Try again'; }else {
+    alert('This it in true case');}
+}
+catch(e){
+    alert('An error has occurred: '+e.message)
+}
+finally{
+    alert('This will be obvious result in both the cases')
+}
+
+function omFunc(){
+    if(confirm('Do you realy want to continue'))
+    {
+        function omkarFunc(){
+            alert('Yah..! you got me');
         }
-    </script>
-    <body onLoad="init();">
-        <canvas id="myCanvas" width="500" height="550" style="border:1px solid #d3d3d3;">test</canvas>
-	<script>
-		var context; var x=100; var y=200; var dx=5; var dy=5;
-                function init(){ context= myCanvas.getContext('2d'); setInterval(draw,10); }
-                function draw(){
-                    context.clearRect(0,0, 500,550);
-                    context.beginPath();
-                    context.fillStyle="#aa34ff";
-                    context.arc(x,y,10,0,Math.PI*2,true);
-                    context.closePath();
-                    context.fill();
-                    /* Boundary Logic for ball*/
-                    if( x<0 || x>500) dx=-dx; 
-                    if( y<0 || y>550) dy=-dy; 
-                    x+=dx; 
-                    y+=dy;
-                }
-	</script>
-	<style> canvas { background: #eee; } </style>
-    </body>
-</html>
+        omkarFunc();
+        return true
+    }else{
+        alert('Ohh..! you lost me');
+        return false;
+      }
+}
+</script>
+<?php 
+echo "<pre>";
+echo "
+<h3>The eight parts of speech — verbs, nouns, pronouns, adverbs, adjectives, prepositions, conjunctions, and interjections — are defined on the pages hyperlinked below. (Some authorities would not list interjections, but would list determiners or articles, instead.)</h3> 
+
+Three little words you often see
+Are ARTICLES: a, an, and the.
+
+A NOUN's the name of anything,
+As: school or garden, toy, or swing.
+
+ADJECTIVES tell the kind of noun,
+As: great, small, pretty, white, or brown.
+
+VERBS tell of something being done:
+To read, write, count, sing, jump, or run.
+
+How things are done the ADVERBS tell,
+As: slowly, quickly, badly, well.
+
+CONJUNCTIONS join the words together,
+As: men and women, wind or weather.
+
+The PREPOSITION stands before
+A noun as: in or through a door.
+
+The INTERJECTION shows surprise
+As: Oh, how pretty! Ah! how wise!
+
+The whole are called the PARTS of SPEECH,
+Which reading, writing, speaking teach.";
+
+echo "50 word list essencial words";
+
+echo "<div style='font-size:16px;'>
+Abate/Abatement -  
+            
+            (reduce, diminish)    
+Adhere - 
+            (stick to, to a plan or belief, such as with glue)
+            similar : Abide by (Follow, conform to), cohere (become united, hold together as part of the same) 
+Alienate/ Inalienate - 
+
+            (cause to become unfriendly, hostile, distant)
+            similar : Disaffect (Cause to loss loyelty or affection), Estrange (make hostile or indefferent)
+Apathy/apathetic - 
+
+            Not caring, absence of feeling, lack of intrest or concern
+            similar : Indifferent(Apathetic or impartial), Lukewarm (having little enthusiasm)
+Artless - 
+
+            lacking skills or knowledge, free of deceit or craftiness 
+            similar : Guileless, Ingenuous
+Balk - 
+
+            refuse to procced OR to do something
+            similar : demur
+Bygone - 
+
+            past, former, that which is in the past
+            similar : Erstwhile, Quondam
+                
+Chauvinisum/Chauvinist/Chauvinistic - 
+
+            blind enthusiasm for military glory, biased divotion to any group/cause . fanatical patriotism
+
+Concede/Concession -        
+
+            give in, admin, yield, acknowledge reluctantly, grant or give up
+            
+Contentious/Contend/Contention - 
+
+            controversial especially gratuitous or pretty ones
+            similar : Disputatious/quarrelsome 
+            
+Countenance - 
+
+            Definition: Facial expression or face (noun); approve or tolerate (verb)
+            Usage: Her countenance said it all—the look on her face was pure terror. / I saw you cheating off my paper, and I can’t countenance cheating—either you turn yourself in or I’ll report you.
+            Related Words: Brook (suffer or tolerate), Condone (overlook or tacitly approve)
+            More Info: Countenance shares a root with continence, meaning “self control.” The use of countenance to mean “approve or tolerate” makes sense when you think about a similar expression: “I cannot look you in the face after what you did.” (We would usually say “I cannot face you” when the speaker is the guilty party).
+            
+Culminate/Culmination -  
+
+            Definition: Reach the highest point or final stage
+            Usage: A Ph.D. program generally culminates in a written dissertation and its defense to a committee.
+            Related Words: Acme, Summit, Pinnacle, and Apex are all words for a high point or peak. Denouement means conclusion or ending, such as of a literary work, esp. one that “wraps up all the loose ends.”
+
+Deference/Defer - 
+
+            Definition: Respectful submission; yielding to the authority or opinion of another
+            Usage: In many cultures, young people are expected to show deference to older people at all times. / I’m not an expert in databases—I’ll defer to our programmers on that decision. / Ingrid deferred her college admissions for a year so she could travel the world.
+
+Deterrent -
+        
+            Definition: Something that restrains or discourages
+            Usage: Some argue that the death penalty is a deterrent to crime—that is, the point is not just to punish the guilty, but to frighten other prospective criminals.
+            Related Words: Balk (an impediment; refuse to proceed or to do something)
+            More Info: As a military policy, deterrence is building military strength or ability to retaliate (especially by stockpiling nuclear weapons, as in the Cold War) sufficient to deter enemies from attacking.
+            
+Disingenuous -
+
+            Definition: Insincere, not genuine
+            Usage: Christine used the fact that her mother spoke limited English as an opportunity to be disingenuous. When her mother asked, “Will there be boys at this sleepover?” she replied “There won’t not be boys there!”
+            Related Words: Dissembling (misleading, concealing the truth, acting hypocritically), Prevaricating (misleading or lying)
+            More Info: Disingenuous appropriately describes misleading behavior that isn’t quite lying, like when you say “Let’s do the dishes!” when you really mean “Why don’t you do the dishes?” The opposite of disingenuous is ingenuous, or genuine.
+
+Dissent(verb/noun) -
+
+            Definition: Disagree or take an opposing view, esp. in relation to a formal body such as a government, political party, or church; such a view
+            Usage: Judge Antonin Scalia cast the only dissenting vote, explaining in his written decision why he thought all the other justices had it wrong. / Not every country has a right to free speech (and thus to dissent), although nations that throw dissenters in jail are condemned by the international community at large.
+            Related Words: Gainsay (deny, refute, oppose), Sedition (incitement of dissent against a government; promoting rebellion by speech or writing)
+            More Info: The variant dissidence tends to be a strong, longstanding, determined practice of dissenting.
+
+
+
+e.g. (abbreviation for Latin “exempli gratia”) -
+
+            Definition: For example, such as
+            Usage: He was positively traumatized by the romantic comedies his girlfriend made him watch (e.g., He’s Just Not That Into You).
+            Related Words: i.e. is an abbrevation of Latin “id est,” or “that is” and means “that is to say, in other words,” as in “He finally nailed the lutz—i.e., a toepick-assisted figure skating jump with an entrance from the back outside edge.”
+            More Info: Use e.g. to introduce examples and i.e. to add a definition or clarification.
+
+Eloquent(adj) - 
+    
+            Definition: Marked by forceful, fluid, apt speech; expressive, emotionally moving
+            Usage: Wow, he’s such an eloquent speaker, he could sell snow to Antarcticans! / When Mom suggested that everyone might enjoy a museum instead of the beach, she was met with the children’s eloquent looks of disgust.
+            Related Words: Rhetorical and oratorical are words related to the art of public speaking. While a lawyer needs good rhetorical skills, sometimes rhetorical and oratorical mean only related to style and effect, and lacking substance. Eloquent, however, is always positive—even in the latter sentence above, the eloquent looks of disgust are very effective in expressing the children’s feelings.
+            More Info: The root “loq” means “speech” and also appears in loquacious (talkative) and interlocutor (participant in a dialogue; interrogator).
+
+Ephemeral (adj)  -
+
+            Definition: Lasting only a short time, fleeting
+            Usage: “Thank you for this jacket that says ‘Eugene’s Girl,’” said Marie, “but I fear that your love will prove to be ephemeral—over the last two years, I’ve seen four other girls in school with the same jacket. Do you buy them in six-packs?”
+            Related Words: Evanescent and Fugacious are synonyms. Transient can mean “lasting only a short time, temporary” or “staying only a short time,” or can be a noun referring to homeless people, temporary workers, or others who move often.
+            More Info: Ephemeral comes from a Greek word for “day.” It originally meant—and sometimes still means—lasting only one day.
+
+Exacting(adj)   -
+
+            Definition: Very severe in making demands; requiring precise attention
+            Usage: The boxing coach was exacting, analyzing Joey’s footwork down to the millimeter and forcing him to repeat movements hundreds of times until they were correct.
+            Related Words: Meticulous (taking extreme care with details; fussy), Fastidious (excessively particular, hard to please)
+            More Info: Exaction is a word for extortion, or demanding money under threat. To exact as a verb can mean to extort money, or simply to demand, as in “to exact obedience from the soldiers.”
+
+Fanatical (adj) / fanatic (noun)  - 
+
+            Definition: Excessively devoted, enthusiastic, or zealous in an uncritical way
+            Usage: We avoid our neighbors—they’re fanatics who can’t go five minutes without trying to convert you to their beliefs. / Mrs. Becker was fanatical about grammar, once deducting fifteen points from a student’s paper for a misused semicolon—and it was a physics class!
+            Related Words: Ardent (very passionate), Zealous (full of fervor or dedicated enthusiasm for a cause, person, etc.). Also Fervent, Fervid, and Perfervid all mean “passionate, fiery, deeply enthusiastic.”
+
+Foreshadow(verb) / foreshadowing (noun)  -
+
+            Definition: Indicate or suggest beforehand, presage
+            Usage: You didn’t know this was a horror movie? I thought it was pretty clear that the children’s ghost story around the campfire was meant to foreshadow the horrible things that would happen to them years later as teenagers at a motel in the middle of the woods.
+            Related Words: Prefigure is a synonym. Forerun means run before or foreshadow. Harbinger and Herald mean a person or thing that indicates what is to come (Herald can also mean “messenger,” including about something in the past). Portentous and Ominous can mean “giving a bad sign about the future” (portentous can also mean “very significant, exciting wonder and awe”).
+            More Info: “Fore” means “before”—foreshadow literally comes from the idea that an object’s shadow sometimes arrives before the object does.
+
+Germane(adj) -
+
+            Definition: Relevant and appropriate, on-topic
+            Usage: This is a business meeting, not a social club—let’s keep our comments germane to the issue of the new campaign.
+            Related Words: Pertinent (relevant), Akin (related by blood; analogous or similar)
+            Memory Trick: When four of the Jackson 5 would get off track, it was always Jermaine who would direct the conversation back to the topic at hand.
+
+Hearken(verb) / hark (verb)  -
+
+            Definition: Listen, pay attention to
+            Usage: The simple lifestyle and anachronistic dress of the Amish hearken back to an earlier era. / “Hearken, students!” said the old-fashioned music teacher. “We are going to practice ‘Hark, the Herald Angels Sing.”
+            More Info: Hark is a variant of hearken and has the same meaning. The expression hearken back or hark back is much more common in modern usage than hearken alone, and means to turn back to something earlier or return to a source.
+
+Impartial(adj)  - 
+
+            Definition: Unbiased, fair
+            Usage: Judge Gonzales removed himself from the case because, having a personal connection to the school where the shooting took place, he did not think he could be appropriately impartial.
+            Related Words: Disinterested, Dispassionate, and Nonpartisan are all related to being fair and not having a bias or personal stake.
+            More Info: The root for “part” appears in partisan, partial, and party—just as a member of a political party is rooting for his own side, someone who is partial is on the side of only part of the group, not everyone equally.
+
+Inconsequential(adj)  -
+
+            Definition: Insignificant, unimportant; illogical
+            Usage: You wrote a bestselling book and got a stellar review in the New York Times—whatever your cousin has to say about it is simply inconsequential. / Given that your entire essay is about Hamlet’s relationship with his mother, your thesis that Hamlet’s relationship with Laertes drives the plot is inconsequential —that is, it does not follow as a consequence of the evidence you’ve provided.
+            Related Words: Negligible, Null, and Nil mean “nothing, or too insignificant to matter.”
+
+
+
+Intractable(adj)  - 
+
+            Definition: Difficult to control, manage, or manipulate; hard to cure; stubborn
+            Usage: That student is positively intractable! Last week, we talked about the importance of staying in your seat during the lesson—this week, she not only got up mid-class, but she actually scrambled on top of a bookcase and refused to come down! / Back injuries often result in intractable pain; despite treatment, patients never feel fully cured.
+            Related Words: Intransigent, Obdurate, and Obstreperous are also used to describe people who are stubborn and hard to control.
+            More Info: The antonym of intractable is tractable, meaning “compliant.” The root “tract” means “manage or handle” (and originally “drag about”) and also appears in tractor, distract, retract, and, of course, tract (a stretch of land).
+
+Laconic(adj)  -
+
+            Definition: Using few words, concise
+            Usage: The boss was famously laconic; after allowing his employees to present their new plan for an entire hour, he finally responded, “Confirmed.”
+            Related Words: Reticent and Taciturn (not talking much) are often used to describe shy people and do not have the sense of “getting the point across efficiently” that laconic does. Pithy, however, takes this idea even further—it means getting the point across in just a few, cleverly-chosen words.
+            More Info: Laconic comes from the Greek place named Laconia, the region in which Sparta (which of course gives us spartan) was located. A famous story has an invading general threatening, “If I enter Laconia, I will raze Sparta to the ground.” The Spartans laconically replied, “If.”
+
+levy(verb, noun)  -
+
+            Definition: Collect tax from, wage war on, or enlist for military service; (verb); act of colleting tax or amount owed, or the drafting of troops into military service (noun)
+            Usage: When England levied yet another tax on the colonists, the colonists were pushed one further step towards levying war. Soon, the worried British began to levy troops.
+            Related Words: Do not confuse levy with levee (a slope or wall along a waterway, designed to stop flooding).
+            More Info: Levy has many definitions that seem somewhat unrelated; however, the root means “raise” or “lightness” (as in lever, elevate), so you can think of raising money through taxes, raising an army by drafting soldiers, or using that army to wage war.
+
+
+maverick (noun)  -
+
+            Definition: Rebel, individualist, dissenter
+            Usage: Most cop movies feature heroes who are maverick police officers, breaking all the rules, blowing things up, and getting their guns confiscated by the chief—but ultimately saving the day.
+            Related Words: “Lone wolf” and “loose cannon” are expressions with similar meanings (although “loose cannon” implies that the person might do something crazy or dangerous).
+            More Info: Samuel Maverick was an American pioneer who didn’t brand (that is, show ownership by marking with a hot iron) his calves. In ranching lingo, a maverick is still an unbranded animal. Just as a maverick calf doesn’t bear a mark of ownership, a political maverick doesn’t belong to any party.
+
+
+
+mores(noun)  -
+
+            Definition: Customs, manners, or morals of a particular group
+            Usage: An American in Saudi Arabia should study the culture beforehand so as to avoid violating deeply conservative cultural mores.
+            Related Words: Ethos (the character, personality, or moral values specific to a person, group, time period, etc.)
+            More Info: Pronounce this word as two syllables (rhymes with “more ways”).
+
+</div>
+";
+
+    
+
+?>
